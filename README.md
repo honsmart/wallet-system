@@ -22,23 +22,23 @@
 
 ## Description
 
-WALLET SERVICE
-A user can create an account and also authenticate with a unique phone number and password.
-A user can create many wallet each with a unique currency and unique wallet ID will be generated.
-A user can credit and transfer from one wallet to another.
-Wallet transfer over N1,000,000 will be approved by ADMIN user
+<h2>WALLET SERVICE</h2>
+<p>A user can create an account and also authenticate with a unique phone number and password.</p>
+<p>A user can create many wallet each with a unique currency and unique wallet ID will be generated.</p>
+<p>A user can credit and transfer from one wallet to another.</p>
+<p>Wallet transfer over N1,000,000 will be approved by ADMIN user.</p>
 
-ADMIN CREDENTIALS
-Phone Number: 2349000000000
-Password: 12345
+<h2>ADMIN CREDENTIALS</h2>
+<p>Phone Number: 2349000000000<p>
+<p>Password: 12345<p>
 
-Technical stack
--Nestjs
--Nodejs
--JavaScript
--TypeScript
--Postgres
--Prisma(ORM)
+<h2>Technical stack</h2>
+<p>-Nestjs<p>
+<p>-Nodejs<p>
+<p>-JavaScript<p>
+<p>-TypeScript<p>
+<p>-Postgres<p>
+<p>-Prisma(ORM)<p>
 
 
 ## Installation
