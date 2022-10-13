@@ -40,6 +40,9 @@
 <p>-Postgres<p>
 <p>-Prisma(ORM)<p>
 
+<p>PORT=3002</p>
+<p>API documentation url http://localhost:3003/docs/api</p>
+
 
 ## Installation
 
