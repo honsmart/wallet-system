@@ -11,7 +11,7 @@ async function bootstrap() {
   const app = await NestFactory.create(AppModule);
   const port = '3003'
   const localurl = 'http://localhost:'
-  const onlineUrl = 'vercel.com/'
+  // const onlineUrl = 'vercel.com/'
 
   // const reflector = new Reflector()
   // app.useGlobalGuards(new AtGuard(reflector))
@@ -20,7 +20,7 @@ async function bootstrap() {
     .setDescription("" + docs)
     .setContact('Adgboye Adedeji Opeyemi', 'https://github.com/honsmart', 'adegboyeopeyemi580@gmail.com')
     .addServer(localurl + port)
-    .addServer(onlineUrl)
+    // .addServer(onlineUrl)
     .addBearerAuth(
       {
         type: 'http',
