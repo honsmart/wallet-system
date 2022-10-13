@@ -34,7 +34,9 @@ Password: 12345
 
 Technical stack
 -Nestjs
--Typescript
+-Nodejs
+-JavaScript
+-TypeScript
 -Postgres
 -Prisma(ORM)
 
