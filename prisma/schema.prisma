@@ -1,0 +1,76 @@
+// This is your Prisma schema file,
+// learn more about it in the docs: https://pris.ly/d/prisma-schema
+
+generator client {
+  provider = "prisma-client-js"
+}
+
+datasource db {
+  provider = "postgresql"
+  url      = env("DATABASE_URL")
+}
+
+// Account model
+model Account {
+  id          Int   @id @default(autoincrement())
+  phone_number String @unique
+  password String
+  role String @default("USER")
+  hashedRt String
+  created   Boolean  @default(true)
+  createdAt   DateTime @default(now())
+  updatedAt   DateTime @updatedAt
+}
+
+
+model User {
+  id          Int   @id @default(autoincrement())
+  phone_number String 
+  password String
+  created   Boolean  @default(true)
+  createdAt   DateTime @default(now())
+  updatedAt   DateTime @updatedAt
+}
+
+model Wallet {
+   id          Int   @id @default(autoincrement())
+   phone_number String
+   currency String
+   wallet_id String @unique
+   balance String @default("0")
+   status   String  @default("active")
+   created   Boolean  @default(true)
+  createdAt   DateTime @default(now())
+  updatedAt   DateTime @updatedAt
+}
+
+model WalletHistory {
+   id          Int   @id @default(autoincrement())
+   currency String
+   sender_wallet_id String 
+   receiver_wallet_id String
+   historyFor String
+   amount String
+   transactionType String
+   status String @default("Pending")
+   adminApproval Boolean @default(false)
+   completed Boolean @default(false)
+   createdAt   DateTime @default(now())
+   updatedAt   DateTime @updatedAt
+}
+
+model walletTrasactionApproval {
+   id          Int   @id @default(autoincrement())
+   transactionID String
+   currency String
+   sender_wallet_id String 
+   receiver_wallet_id String
+   historyFor String
+   amount String
+   transactionType String
+   status String @default("UnApproved")
+   adminApproval Boolean @default(false)
+   completed Boolean @default(false)
+   createdAt   DateTime @default(now())
+   updatedAt   DateTime @updatedAt
+}

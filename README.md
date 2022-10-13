@@ -19,18 +19,45 @@
     <a href="https://opencollective.com/nest#sponsor"  target="_blank"><img src="https://img.shields.io/badge/Support%20us-Open%20Collective-41B883.svg" alt="Support us"></a>
   <a href="https://twitter.com/nestframework" target="_blank"><img src="https://img.shields.io/twitter/follow/nestframework.svg?style=social&label=Follow"></a>
 </p>
-  <!--[![Backers on Open Collective](https://opencollective.com/nest/backers/badge.svg)](https://opencollective.com/nest#backer)
-  [![Sponsors on Open Collective](https://opencollective.com/nest/sponsors/badge.svg)](https://opencollective.com/nest#sponsor)-->
 
 ## Description
 
-[Nest](https://github.com/nestjs/nest) framework TypeScript starter repository.
+WALLET SERVICE
+A user can create an account and also authenticate with a unique phone number and password.
+A user can create many wallet each with a unique currency and unique wallet ID will be generated.
+A user can credit and transfer from one wallet to another.
+Wallet transfer over N1,000,000 will be approved by ADMIN user
+
+ADMIN CREDENTIALS
+Phone Number: 2349000000000
+Password: 12345
+
+Technical stack
+-Nestjs
+-Typescript
+-Postgres
+-Prisma(ORM)
+
 
 ## Installation
 
 ```bash
 $ npm install
+
 ```
+
+## stating the database
+```bash
+$ docker-compose
+
+```
+
+## Database 
+```bash
+$ npx prisma studio
+
+```
+it will open http://localhost:5555 database route by default
 
 ## Running the app
 
@@ -64,9 +91,8 @@ Nest is an MIT-licensed open source project. It can grow thanks to the sponsors 
 
 ## Stay in touch
 
-- Author - [Kamil Myśliwiec](https://kamilmysliwiec.com)
-- Website - [https://nestjs.com](https://nestjs.com/)
-- Twitter - [@nestframework](https://twitter.com/nestframework)
+- Author - [Adegboye Adedeji opeyemi](http://honsmart.github.io/)
+- Website - [http://honsmart.github.io/](http://honsmart.github.io/)
 
 ## License
 
