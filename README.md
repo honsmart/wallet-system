@@ -21,7 +21,7 @@
 </p>
 
 ## Description
-
+Automated wallet system
 <h2>WALLET SERVICE</h2>
 <p>A user can create an account and also authenticate with a unique phone number and password.</p>
 <p>A user can create many wallet each with a unique currency and unique wallet ID will be generated.</p>
@@ -53,7 +53,7 @@ $ npm install
 
 ## stating the database
 ```bash
-$ docker-compose
+$ docker-compose up
 
 ```
 
