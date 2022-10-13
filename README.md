@@ -57,6 +57,24 @@ $ docker-compose up
 
 ```
 
+<p>Seed your database using Prisma Client and Prisma's integrated seeding functionality</p>
+<p>Populate your database with ADMIN credentials</p>
+
+## Auto Database seeding
+```bash
+$ npx prisma migrate dev
+
+$ npx prisma migrate reset
+
+```
+
+## Manual Database seeding
+```bash
+$ npx prisma db seed
+
+```
+
+
 ## Database 
 ```bash
 $ npx prisma studio

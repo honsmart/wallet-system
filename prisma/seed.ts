@@ -6,22 +6,22 @@ import { PrismaClient } from '@prisma/client';
 const prisma = new PrismaClient();
 
 async function main() {
-  // create two dummy accounts
-  const account1 = await prisma.account.upsert({
-    where: { phone_number: "234000000000" },
-    create: {
-      phone_number: "234000000000",
-      password: '12345',
-      created: true,
-    },
-    update: {
-        role: "ADMIN" 
-     },
-  });
+  const newUser = await prisma.account.create({data:{
+    phone_number: String("234000000000"),
+    password: String("12$2b$20$gMV1rUbJPC8QShLjMSb1wOlzElM1X/ploR3fT7knaPIOJ.SMn/iv6345"),
+    hashedRt: ""
+}});
 
+const adminUpdate = await prisma.account.update({
+  where: {
+      id: newUser.id
+  },
+  data: { 
+   role: "ADMIN",
+  }
+})
 
-
-  console.log({ account1, account2 });
+  console.log({ adminUpdate });
 }
 
 // execute the main function
