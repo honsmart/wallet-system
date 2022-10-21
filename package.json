@@ -2,7 +2,7 @@
   "name": "wallet",
   "version": "0.0.1",
   "engines": {
-    "node": "18.2.0"
+    "node": "16.0.0"
   },
   "description": "",
   "author": "",
